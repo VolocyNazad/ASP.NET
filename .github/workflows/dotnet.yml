@@ -25,9 +25,9 @@ jobs:
     - name: Build
       run: dotnet build './UnitTests/src/PromoCodeFactory.WebHost/PromoCodeFactory.WebHost.csproj'
     - name: Restore test dependencies
-      run: dotnet restore './UnitTests/src/PromoCodeFactory.PromoCodeFactory.UnitTests/PromoCodeFactory.UnitTests.csproj'
+      run: dotnet restore './UnitTests/src/PromoCodeFactory.UnitTests/PromoCodeFactory.UnitTests.csproj'
     - name: Build
-      run: dotnet build './UnitTests/src/PromoCodeFactory.PromoCodeFactory.UnitTests/PromoCodeFactory.UnitTests.csproj'
+      run: dotnet build './UnitTests/src/PromoCodeFactory.UnitTests/PromoCodeFactory.UnitTests.csproj'
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - run: echo "🐱‍👤This job's status is ${{ job.status }}." 
